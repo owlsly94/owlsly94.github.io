@@ -1,0 +1,99 @@
+.container {
+  padding: 160px 15% 120px;
+  background-color: var(--color-dark);
+}
+
+.mainText {
+  text-align: center;
+}
+
+.mainText p {
+  color: var(--color-secondary);
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.mainText h2 {
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--color-text);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 5rem;
+}
+
+.Box {
+  background: var(--color-bg);
+  padding: 35px 45px;
+  border-radius: 8px;
+  transition: all .45s ease;
+  width: 60%;
+  box-sizing: border-box;
+  margin: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.Box h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 15px;
+}
+
+.Box p {
+  color: var(--color-secondary);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.Box:hover {
+  transform: translateY(-8px);
+}
+
+.servicesIcons {
+  margin-bottom: 20px;
+}
+
+.skillsTitle {
+  margin-top: 5rem;
+}
+
+.circleContent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2.5rem;
+  margin-top: 5rem;
+}
+
+.Circle {
+  padding: 35px 35px;
+  transition: all .45s ease;
+  box-sizing: border-box;
+  margin: auto;
+  text-align: center;
+}
+
+.Circle:hover {
+  transform: translateY(-10px);
+}
+
+.title {
+  color: var(--color-text);
+}
+
+@media screen and (max-width:830px) {
+  .circleContent {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0rem;
+    margin-left: -25px;
+  }
+  .Box {
+    width: 100%;
+  }
+}

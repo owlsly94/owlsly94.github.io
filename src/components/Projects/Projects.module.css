@@ -1,0 +1,100 @@
+.container {
+    padding: 160px 15% 120px;
+}
+
+.mainText {
+    text-align: center;
+}
+
+.mainText p {
+    color: var(--color-secondary);
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+  
+  .mainText h2 {
+    font-size: 3rem;
+    line-height: 1;
+    color: var(--color-text);
+}
+
+.projectContent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+
+.projectRow {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.projectRow img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.Layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #bd93f9);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+
+.Layer h5 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--color-text);
+}
+
+.Layer p {
+    color: var(--color-secondary);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.projectRow img {
+    transform: scale(1.1);
+}
+
+.projectRow:hover .Layer {
+    height: 100%;
+}
+
+.Layer a {
+    margin-top: 20px;
+    font-size: 20px;
+    background: var(--color-dark);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:830px) {
+    .projectContent {
+        grid-template-columns: minmax(350px, auto);
+        margin-left: -40px;
+    }
+}
