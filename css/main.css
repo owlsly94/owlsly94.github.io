@@ -1,0 +1,246 @@
+/* ============================================================
+   1. THEME VARIABLES (Tokyo Night)
+   ============================================================ */
+
+:root {
+    /* TOKYO NIGHT DARK (Default) */
+    --bg: #1a1b26;
+    --text: #a9b1d6;
+    --accent: #bb9af7;    /* Purple */
+    --secondary: #7aa2f7; /* Blue */
+    --rss-color: #ff9e64; /* Tokyo Orange */
+    --hover-pill: #24283b; 
+    --header-bg: rgba(26, 27, 38, 0.9);
+    --date-color: #565f89;
+    --border: rgba(153, 161, 179, 0.1);
+    --code-bg: #16161e;
+}
+
+:root.light-mode {
+    /* TOKYO NIGHT LIGHT (Day) */
+    --bg: #e1e2e7;
+    --text: #3760bf;
+    --accent: #9854f1;
+    --secondary: #2e7de9;
+    --rss-color: #e67e22; 
+    --hover-pill: #cfd0d7;
+    --header-bg: rgba(225, 226, 231, 0.9);
+    --date-color: #8992b7;
+    --border: rgba(55, 96, 191, 0.1);
+    --code-bg: #d5d6db;
+}
+
+/* ============================================================
+   2. CORE LAYOUT & GLOBAL STYLES
+   ============================================================ */
+
+* { box-sizing: border-box; }
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'JetBrains Mono', monospace;
+    margin: 0;
+    line-height: 1.6;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    background: var(--header-bg);
+    backdrop-filter: blur(12px);
+    z-index: 100;
+    border-bottom: 1px solid var(--border);
+}
+
+.header-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.content-wrapper {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* ============================================================
+   3. NAVIGATION & SOCIALS
+   ============================================================ */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.header-logo {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--secondary);
+    text-decoration: none;
+    letter-spacing: -1px;
+    text-transform: lowercase;
+}
+
+.logo-text::after { content: '.'; color: var(--accent); }
+
+.nav-links { display: flex; gap: 4px; align-items: center; }
+
+.nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a:hover {
+    background-color: var(--hover-pill);
+    color: var(--accent);
+}
+
+.social-icon { padding: 8px !important; }
+
+.social-divider {
+    width: 1px;
+    height: 20px;
+    background: var(--border);
+    margin: 0 8px;
+}
+
+.rss-btn:hover { color: var(--rss-color) !important; }
+
+.header-actions button {
+    background: none;
+    border: none;
+    color: var(--text);
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.header-actions button:hover { background-color: var(--hover-pill); }
+
+/* Theme Icon Logic */
+.icon-sun { display: block; }
+.icon-moon { display: none; }
+:root.light-mode .icon-sun { display: none; }
+:root.light-mode .icon-moon { display: block; }
+
+/* ============================================================
+   4. TYPOGRAPHY & FOOTER
+   ============================================================ */
+
+h1, h2, h3 { color: var(--accent); margin-top: 2.5rem; font-weight: 700; }
+a { color: var(--secondary); text-decoration: none; transition: 0.2s; }
+a:hover { color: var(--accent); }
+
+.item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    margin: 0 -10px;
+    border-bottom: 1px solid var(--border);
+    border-radius: 8px;
+    transition: background 0.2s ease;
+}
+
+.item-row:hover { background-color: var(--hover-pill); }
+
+.item-date { color: var(--date-color); font-size: 0.85rem; }
+
+/* Footer Styles */
+.site-footer {
+    max-width: 800px;
+    margin: 80px auto 40px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.footer-divider {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin-bottom: 30px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.copyright {
+    color: var(--date-color);
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 0.85rem;
+}
+
+.footer-socials a { color: var(--date-color); text-transform: lowercase; }
+.footer-socials a:hover { color: var(--accent); }
+.footer-dot { color: var(--border); }
+
+/* ============================================================
+   5. ARTICLE & BLOG CONTENT
+   ============================================================ */
+
+.post-header { margin-bottom: 3rem; }
+.post-title { font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--text); }
+.post-metadata { font-size: 0.9rem; color: var(--date-color); }
+
+.content { font-size: 1.05rem; line-height: 1.8; }
+.content p { margin-bottom: 1.5rem; }
+
+.content pre {
+    background: var(--code-bg) !important;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    margin: 2rem 0;
+}
+
+.content code {
+    font-family: 'JetBrains Mono', monospace;
+    background: var(--hover-pill);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.content blockquote {
+    border-left: 4px solid var(--accent);
+    margin: 2rem 0;
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    background: rgba(187, 154, 247, 0.05);
+    font-style: italic;
+    color: var(--text);
+}

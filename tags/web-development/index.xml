@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web Development on owlsly</title>
+    <link>http://localhost:1313/tags/web-development/</link>
+    <description>Recent content in Web Development on owlsly</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/web-development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Personal Portfolio</title>
+      <link>http://localhost:1313/projects/website/</link>
+      <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/website/</guid>
+      <description>&lt;h1 id=&#34;project-overview&#34;&gt;Project Overview&lt;/h1&gt;&#xA;&lt;p&gt;This is the very site you are looking at right now! I decided to migrate from a purely static HTML/CSS setup to &lt;strong&gt;Hugo&lt;/strong&gt; to make content management easier and to improve my workflow.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Fast Loading:&lt;/strong&gt; Built as a static site for near-instant load times.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Markdown Powered:&lt;/strong&gt; I can write blog posts and project updates in simple Markdown.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Custom Styling:&lt;/strong&gt; Styled with a dark purple/blue aesthetic (&lt;code&gt;#0f172a&lt;/code&gt;) to match my personal brand.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;tools-used&#34;&gt;Tools Used&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Hugo&lt;/strong&gt;: The static site generator.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;GitHub Pages&lt;/strong&gt;: For hosting the live site.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;CSS3&lt;/strong&gt;: Custom variables for easy theme swapping.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;why-hugo&#34;&gt;Why Hugo?&lt;/h2&gt;&#xA;&lt;p&gt;I wanted a system that was &amp;ldquo;set it and forget it.&amp;rdquo; With Hugo, I don&amp;rsquo;t have to worry about database vulnerabilities or slow server-side rendering. I just push my Markdown files, and the site updates automatically.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
