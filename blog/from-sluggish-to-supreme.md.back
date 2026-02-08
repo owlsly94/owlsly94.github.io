@@ -1,0 +1,33 @@
+---
+title: "From 'Sluggish' to Supreme: My Journey to 100% Linux"
+date: 2026-01-17
+description: "How a chance encounter with Ubuntu 9.10 at a small repair shop sparked a lifelong passion for open-source sovereignty."
+---
+
+We all have that one moment that changes how we see technology. For me, it happened by accident during my school practice at an electrotechnical high school. While some of my peers were heading to big public firms like Telekom, I ended up at a small, private PC service shop. That’s where I saw it: a system that looked "weird," fast, and undeniably cool.
+
+## The Catalyst: Ubuntu 9.10
+At the time, I was rocking an Asus K70. It was a decent machine, but Windows 7 felt like it was running through mud. After peppering the tech at the shop with a thousand questions, we took the plunge and installed Ubuntu 9.10 "Karmic Koala."
+
+The difference was night and day. But more than the speed, it was the curiosity that got me. I started devouring documentation, lurking on forums, and following the first wave of Linux YouTubers. I was officially down the rabbit hole.
+
+## The Evolution: Arch, Gentoo, and the "Rabbit Hole"
+Once you learn that you don't have to accept the defaults, you start looking for more control. My journey followed the path of many enthusiasts:
+
+* **The Learning Phase:** Getting comfortable with the command line and understanding how a kernel actually talks to hardware.
+* **The Arch Phase:** Distro-hopping eventually led me to Arch. I wanted to build my system piece by piece, and the "Arch Way" taught me more about Linux than any textbook ever could.
+* **The Ultimate Challenge:** Then came Gentoo. People talk about it like it’s an impossible mountain, but once you understand the documentation, it’s actually quite logical. Compiling from source gave me that "full control" feeling I’d been craving.
+
+## The Final Barrier: Gaming
+For years, I lived a double life. My laptops were pure Linux, but my main desktop stayed on Windows. Why? Gaming. I loved the freedom of Linux, but I wasn't ready to give up my library. For a long time, it felt like a compromise I’d always have to make. 
+
+Then, Valve released **Proton**. Suddenly, the "impossible" was possible. The performance gap closed, the compatibility skyrocketed, and I finally did it: I ditched Windows completely.
+
+## Why Linux?
+People often ask why I bother. The answer is simple: **Freedom.**
+
+* **Customization:** You can make it look like a futuristic HUD or a brutalist terminal.
+* **Scalability:** It can be as bloated or as minimal as you want.
+* **Ownership:** You are in full control of your hardware. No forced updates, no telemetry you can't turn off, just you and your machine.
+
+Today, almost every system in my house runs Linux. Looking back at that kid in the repair shop, I don't think he realized that a simple OS install would turn into a lifelong passion for open-source sovereignty.
